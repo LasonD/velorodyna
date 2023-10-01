@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
@@ -15,6 +15,7 @@ import { CreateRidePage } from './create-ride.page';
     IonicModule,
     CreateRidePageRoutingModule
   ],
-  declarations: [CreateRidePage]
+  declarations: [CreateRidePage],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class CreateRidePageModule {}

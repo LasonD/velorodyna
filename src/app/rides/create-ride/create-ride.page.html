@@ -13,4 +13,8 @@
       <ion-title size="large">Нова катка</ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-label>{{ latitude }} lat {{ longitude }} lon</ion-label>
+  <div class="container">
+    <capacitor-google-maps #map></capacitor-google-maps>
+  </div>
 </ion-content>
